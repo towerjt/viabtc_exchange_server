@@ -54,6 +54,15 @@ You MUST use the depends/hiredis to install the hiredis library. Or it may not b
 
 Compile network and utils first. The rest all are independent.
 
+apt install libev-dev libjansson-dev libhiredis-dev libmpdec-dev libmysqlclient-dev libstdc++-5-dev
+
+cd depends
+
+git clone https://github.com/towerjt/librdkafka.git
+
+use version 0.11.0
+
+
 **Deployment**
 
 One single instance is given for matchengine, marketprice and alertcenter, while readhistory, accesshttp and accwssws can have multiple instances to work with loadbalancing.
